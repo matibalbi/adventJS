@@ -11,7 +11,7 @@ function contains(store, product) {
     if (recursiveObj(store)) return true
     else return false
 }
-
+var s =1
 const almacen = {
     'estanteria1': {
       'cajon1': {
