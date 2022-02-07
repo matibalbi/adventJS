@@ -1,16 +1,15 @@
 function contains(store, product) {
-    var recursiveObj = obj => {
-        for (var key in obj) {
-            if(!obj.hasOwnProperty(key)) continue
-            if (typeof obj[key] !== 'object') {
-                if (obj[key] === product) return true
-            } else {
-                if (recursiveObj(obj[key])) return true
-            }
-        }
+    return recursiveObj(store, product)
+}
+
+function recursiveObj(obj, val) {
+    for (var key in obj) {
+        if(!obj.hasOwnProperty(key)) continue
+        if (typeof obj[key] !== 'object') {
+            if (obj[key] === val) return true
+        } else if (recursiveObj(obj[key], val)) return true
     }
-    if (recursiveObj(store)) return true
-    else return false
+    return false
 }
 
 const almacen = {
