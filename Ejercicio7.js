@@ -1,6 +1,7 @@
 function contains(store, product) {
     var recursiveObj = obj => {
         for (var key in obj) {
+            if(!obj.hasOwnProperty(key)) continue
             if (typeof obj[key] !== 'object') {
                 if (obj[key] === product) return true
             } else {
