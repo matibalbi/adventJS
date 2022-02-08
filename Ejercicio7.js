@@ -1,13 +1,9 @@
-function contains(store, product) {
-    return recursiveObj(store, product)
-}
-
-function recursiveObj(obj, val) {
-    for (var key in obj) {
-        if (!obj.hasOwnProperty(key)) continue
-        if (typeof obj[key] !== 'object') {
-            if (obj[key] === val) return true
-        } else if (recursiveObj(obj[key], val)) return true
+function contains(store, product) {     // función recursiva
+    for (var key in store) {
+        if (!store.hasOwnProperty(key)) continue
+        if (typeof store[key] !== 'object') {
+            if (store[key] === product) return true
+        } else if (contains(store[key], product)) return true
     }
     return false
 }

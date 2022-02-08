@@ -1,4 +1,4 @@
-export default function listGifts(letter) {
+function listGifts(letter) {
     var nuevoarray = letter.split(" ")
     var objeto = {}
     for (var i = 0; i < nuevoarray.length; i++) {

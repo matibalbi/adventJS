@@ -1,4 +1,4 @@
-export default function daysToXmas(date) {
+function daysToXmas(date) {
     var xmas = new Date("Dec 25, 2021")
     return (xmas - date.setHours(0,0,0))/(1000*60*60*24)
 }

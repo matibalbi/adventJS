@@ -1,4 +1,4 @@
-export default function contarOvejas(ovejas) {
+function contarOvejas(ovejas) {
     var nuevoarray = ovejas.filter(function(elemento) {
       if ((elemento.name.includes("a") || elemento.name.includes("A")) && (elemento.name.includes("n") || elemento.name.includes("N")) && elemento.color === "rojo") {
           return elemento

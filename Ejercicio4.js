@@ -1,4 +1,4 @@
-export default function createXmasTree(height) {
+function createXmasTree(height) {
     var tree = ""
     for (var j = 0; j < height + 2; j++) {
         for (var i = 1 ; i <= height * 2 - 1; i++) {

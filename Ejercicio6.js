@@ -1,4 +1,4 @@
-export default function sumPairs(numbers, result) {
+function sumPairs(numbers, result) {
     var array = []
     for (var i = 0; i < numbers.length - 1; i++) {
         for (var j = i + 1; j < numbers.length; j++) {

@@ -1,4 +1,4 @@
-export default function getMinJump(obstacles) {
+function getMinJump(obstacles) {
     for (var i = 2; true; i++) {
         var minjump = true
         for (var j = 0; j < obstacles.length; j++) {
