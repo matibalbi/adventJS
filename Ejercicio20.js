@@ -1,5 +1,5 @@
 function pangram(letter) {
-    arr = []
+    var arr = []
     for (var i = 0; i < letter.length; i++) {
         var char = letter[i].toLowerCase()
         if ((char.charCodeAt(0) < 97 || char.charCodeAt(0) > 122) && char !== "ñ") continue
