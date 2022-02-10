@@ -9,6 +9,24 @@ function countDecorations(bigTree) {        // función recursiva
     return decorations
 }
 
+// otra opción:
+
+// function countDecorations(bigTree) {
+//     const stack = [bigTree];
+//     let sum = 0;
+//     while(stack.length > 0) {
+//       const { value, left, right } = stack.pop();
+//       sum += value;
+//       if(left) {
+//         stack.push(left);
+//       }
+//       if(right) {
+//         stack.push(right);
+//       }
+//     }
+//     return sum;
+// }
+
 // tenemos el árbol en forma de objeto
 const tree = {
     value: 1, // el nodo raíz siempre es uno, porque es la estrella ⭐
